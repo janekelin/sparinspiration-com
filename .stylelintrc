@@ -1,0 +1,32 @@
+{
+  "plugins": ["stylelint-a11y"],
+  "rules": {
+    "color-no-invalid-hex": true,
+    "font-family-no-missing-generic-family-keyword": true,
+    "function-linear-gradient-no-nonstandard-direction": true,
+    "unit-no-unknown": true,
+    "property-no-unknown": true,
+    "selector-pseudo-class-no-unknown": true,
+    "selector-pseudo-element-no-unknown": true,
+    "selector-type-no-unknown": true,
+    "media-feature-name-no-unknown": true,
+    "comment-no-empty": true,
+    "no-descending-specificity": true,
+    "no-duplicate-selectors": true,
+    "no-extra-semicolons": true,
+    "no-invalid-double-slash-comments": true,
+    "color-named": never,
+    "a11y/media-prefers-reduced-motion": true,
+    "a11y/no-outline-none": true,
+    "a11y/selector-pseudo-class-focus": true,
+    "a11y/content-property-no-static-value": [true, { "severity": "warning" }],
+    "a11y/font-size-is-readable": [true, { "severity": "warning" }],
+    "a11y/line-height-is-vertical-rhythmed": [true, { "severity": "warning" }],
+    "a11y/no-display-none": [true, { "severity": "warning" }],
+    "a11y/no-spread-text": [true, { "severity": "warning" }],
+    "a11y/no-obsolete-attribute": [true, { "severity": "warning" }],
+    "a11y/no-obsolete-element": [true, { "severity": "warning" }],
+    "a11y/no-text-align-justify": [true, { "severity": "warning" }],
+    "a11y/media-prefers-color-scheme": [true, { "severity": "warning" }]
+  }
+}

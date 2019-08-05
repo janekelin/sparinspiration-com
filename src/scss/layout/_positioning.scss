@@ -1,0 +1,33 @@
+
+/*
+            ***POSITIONING***
+*/
+
+
+//index.html
+body,
+figure { position: relative; }
+
+header,
+footer { 
+  position: fixed;
+  @media screen and (max-width: $tablet) {position: static; } 
+} 
+
+#mainNav {
+  @media screen and (max-width: $tablet) { 
+    position: fixed;
+    bottom: 0; 
+    z-index: 1;
+  }
+}
+
+footer {
+  bottom: 0;
+  z-index: 2;
+}
+
+//404.html
+.not-found--layout { display: table; }
+
+.not-found--content { display: table-cell; }

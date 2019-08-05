@@ -1,0 +1,14 @@
+
+@mixin fit-container($width:null, $margin-left:null, $margin-right:null) {
+  width: $width;
+  margin-left: $margin-left;
+  margin-right: $margin-right;
+}
+
+@mixin make-overlay($position:null, $width:null, $height:null, $top:null, $left:null) {
+  position: $position;
+  width: $width;
+  height: $height;
+  top: $top;
+  left: $left;
+}

@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <Iana Godskesen Kalinichenko> -- <Web Developer and Designer> -- <@_janekelin>
+
+# THANKS
+
+    <Flemming Godskesen>
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Bootstrap 4, Normalize.css

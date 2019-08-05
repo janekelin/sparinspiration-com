@@ -1,0 +1,62 @@
+
+/*
+          ***PRINT STYLES***
+*/
+
+@media print {
+
+  //hide unnecessary elements
+  #mainNav,
+  .portrait,
+  .low-voice,
+  .card figure,
+  i[class^="fab"] { display: none; }
+
+  //linerize the layout
+  header,
+  main,
+  #contact,
+  footer { 
+    display: block; 
+    width: auto;
+    height: auto;
+    margin: 1%;
+    padding: 2%;
+  }
+
+  header,
+  footer { position: static; }
+
+  main {
+    section {
+      min-height: auto;
+      padding: 0;
+    }
+
+    .card {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  // adjust the typography
+  body {
+    font-family: serif;
+    font-size: 12pt;
+  }
+
+  h1 { text-align: center; }
+
+  // add suplementary content
+  section[id*="about"]::after { 
+    content: "My projects";
+    font-size: 26pt;
+    font-weight: bold; 
+  }
+  
+  a[href*="linkedin"]::before { content: "My LinkedIn: "; }
+  a[href*="github"]::before { content: "My GitHub: "; }
+  a[href*="twitter"]::before { content: "My Twitter: "; }
+  a[href*="codepen"]::before { content: "My CodePen: "; }
+
+}

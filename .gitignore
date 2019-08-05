@@ -1,0 +1,12 @@
+npm-debug.log
+package-lock.json
+Thumbs.db
+
+*.log
+.DS_Store
+.idea
+.npm
+
+build/
+logs/
+node_modules/

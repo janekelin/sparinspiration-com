@@ -1,0 +1,62 @@
+/* 
+            ***COLOR PALETTE***
+*/
+/* Base colors */
+/* Functional colors */
+/*
+            ***FONTS***
+*/
+/*
+            ***TYPOGRAPHY***
+*/
+@import url("https://fonts.googleapis.com/css?family=Spectral:200,300");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: "Spectral", Times, sans-serif;
+  color: #000;
+}
+
+#mainNav {
+  position: fixed;
+  display: block;
+  width: 50vw;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 40%;
+}
+
+#mainNav a {
+  display: block;
+  width: 50%;
+  color: #000;
+  padding: 1em;
+  margin-top: .5em;
+  border: 1px solid;
+}
+
+#mainNav a:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+#mainNav[data-theme="Page 1"] {
+  background-image: url(../img/image1.jpg);
+}
+
+#mainNav[data-theme="Page 2"] {
+  background-image: url(../img/image2.jpg);
+}
+
+#mainNav[data-theme="Page 3"] {
+  background-image: url(../img/image3.jpg);
+}
+/*# sourceMappingURL=site.css.map */

@@ -1,0 +1,46 @@
+
+/*
+            ***LINKS***
+*/
+
+// general
+a { 
+  text-decoration: none;
+  color: $color-text;
+}
+
+nav a {
+  &:hover,
+  &:focus { border-bottom: 5px solid $color-navigation; }
+
+  &:active { border-bottom-style: dotted; }
+}
+
+p {
+  a {
+    border-bottom: 3px solid $color-link;
+
+    &:visited { opacity: 0.8; }
+
+    &:hover,
+    &:focus { background-color: $color-link; }
+
+    &:active { background-color: $color-link-active; }
+  }
+} 
+
+#contact a,
+#projects a {
+  opacity: 0.8;
+
+  &:hover,
+  &:focus { opacity: 1; }
+}
+
+//404.html
+.not-found--link { 
+  color: $color-not-found--link;
+  
+  &:hover,
+  &:focus { color: $color-text; } 
+}
