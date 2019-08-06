@@ -9,7 +9,7 @@ a {
 .navbar-brand {
   cursor: pointer;
 
-  @media screen and (max-width: $breakpoint-lg){
+  @media screen and (max-width: $tablet-large){
    border-bottom: 1px solid currentColor;
    margin-bottom: .3125rem;
    padding-bottom: 0;

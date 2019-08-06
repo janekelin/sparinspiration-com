@@ -1,4 +1,8 @@
 // ***HEADER***
+header {
+  background-color: $color-header;
+}
+
 .navbar {
   background: $gradient-main;
 }
@@ -7,41 +11,50 @@
   height: 75vh;
   padding: 0;
   position: relative;
+}
 
-  > div {
-    @include make-overlay(absolute, 100%, 100%, 0, 0); 
+.carousel {
+  height: 35vh;
+  opacity: .7;
+  overflow: hidden;
+  
+  @media screen and (min-width: $tablet) {
+    height: 40vh;
   }
 
-  .jumbotron {
-    background-color: $color-jumbotron;
-    color: $color-text-invert;
+  @media screen and (min-width: $tablet-large){
+    @include make-overlay(absolute, 100%, 100%, 0, 0)
+  }
+}
 
-    .intro { 
-      background-color: darken($color-jumbotron, 70%); 
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      max-width: none;
-      min-height: 50vh;
-      padding: 5vh;
-      position: relative;
-      top: 25vh;
+.jumbotron {
+  align-items: center;
+  background-color: darken($color-jumbotron, 60%);
+  color: $color-text-invert;
+  display: flex;
+  height: 40vh;
+  justify-content: center;
 
+  @media screen and (min-width: $tablet-large){
+    @include make-overlay(absolute, 80%, 40%, 70%, 20%)
+  }
+}
+
+.intro {
+  text-align: center;
+
+  h1 {
+    font-family: $font-primary;
+    font-size: 2rem;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 4rem;
     }
   }
-}
 
-header .intro {
-  text-align: center;
-}
-
-header > section {
-
-
-  
-
-  .carousel {
-    opacity: .2;
-    overflow: hidden;
+  p {
+    @media screen and (min-width: $tablet) {
+      font-size: 2rem;
+    }
   }
 }

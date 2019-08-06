@@ -18,6 +18,7 @@ $color-custom-yellow: #efbe41;
 $color-white: #fff;
 
 // Functional colors 
+$color-header: $color-custom-blue-light;
 $color-jumbotron: $color-custom-blue-light;
 $color-text-invert: $color-white;
 
@@ -38,7 +39,7 @@ $color-tags: $color-white;
 $color-text: $color-black;
 
 // Gradents 
-$gradient-main: linear-gradient(190deg, $color-custom-violet 20%, $color-custom-blue 35%, $color-custom-blue-light 90%);
+$gradient-main: linear-gradient(30deg, $color-white 8%, $color-custom-violet 18%, $color-custom-blue 20%, $color-custom-blue-light 25%);
 
 $gradient-footer: linear-gradient(100deg, $color-custom-red 40%, $color-custom-yellow 89%);
 
@@ -49,4 +50,5 @@ $gradient-footer: linear-gradient(100deg, $color-custom-red 40%, $color-custom-y
 $font-primary: 'Bevan', cursive;
 
 // ***MEDIA QUERIES***
-$breakpoint-lg: 992px;
+$tablet: 768px;
+$tablet-large: 992px;
