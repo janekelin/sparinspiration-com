@@ -1,7 +1,4 @@
-
-/*
-            ***LINKS***
-*/
+//            ***LINKS***
 
 // general
 a { 
@@ -9,32 +6,26 @@ a {
   color: $color-text;
 }
 
-nav a {
-  &:hover,
-  &:focus { border-bottom: 5px solid $color-navigation; }
+.navbar-brand {
+  cursor: pointer;
 
-  &:active { border-bottom-style: dotted; }
-}
-
-p {
-  a {
-    border-bottom: 3px solid $color-link;
-
-    &:visited { opacity: 0.8; }
-
-    &:hover,
-    &:focus { background-color: $color-link; }
-
-    &:active { background-color: $color-link-active; }
+  @media screen and (max-width: $breakpoint-lg){
+   border-bottom: 1px solid currentColor;
+   margin-bottom: .3125rem;
+   padding-bottom: 0;
   }
-} 
 
-#contact a,
-#projects a {
-  opacity: 0.8;
+  &:focus,
+  &:hover {
+    &::after {
+      content: '↦';
+      padding-left: 5px;
+    }
+  }
 
-  &:hover,
-  &:focus { opacity: 1; }
+  &:active {
+    font-size: larger;
+  }
 }
 
 //404.html

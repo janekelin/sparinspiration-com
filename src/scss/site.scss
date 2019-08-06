@@ -1,38 +1,10 @@
 @import 'helpers/variables';
 @import 'helpers/mixins';
-@import 'external/normalize';
-@import 'external/boilerplate';
+@import 'base/layout';
 @import 'base/links';
 @import 'base/print';
-
-header .intro {
-  text-align: center;
-}
-
-header > section {
-  position: relative;
-  height: 75vh;
-
-  > div {
-    @include make-overlay(absolute, 100%, 100%, 0, 0); 
-  }
-
-  .jumbotron {
-    background-color: #c5bafb;
-    color: white;
-
-    .intro { background-color: darken(#c5bafb, 70%); }
-  }
-
-  .carousel {
-    opacity: .2;
-    overflow: hidden;
-  }
-}
-
-.tips { 
-  display: flex; 
-  flex-direction: column;
-  @media screen and (min-width: 768px) { flex-direction: row; }
-}
-
+@import 'base/typographic';
+@import 'base/visual';
+@import 'components/header';
+@import 'components/main';
+@import 'components/footer';

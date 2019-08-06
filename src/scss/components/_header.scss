@@ -1,0 +1,47 @@
+// ***HEADER***
+.navbar {
+  background: $gradient-main;
+}
+
+.presentation {
+  height: 75vh;
+  padding: 0;
+  position: relative;
+
+  > div {
+    @include make-overlay(absolute, 100%, 100%, 0, 0); 
+  }
+
+  .jumbotron {
+    background-color: $color-jumbotron;
+    color: $color-text-invert;
+
+    .intro { 
+      background-color: darken($color-jumbotron, 70%); 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      max-width: none;
+      min-height: 50vh;
+      padding: 5vh;
+      position: relative;
+      top: 25vh;
+
+    }
+  }
+}
+
+header .intro {
+  text-align: center;
+}
+
+header > section {
+
+
+  
+
+  .carousel {
+    opacity: .2;
+    overflow: hidden;
+  }
+}

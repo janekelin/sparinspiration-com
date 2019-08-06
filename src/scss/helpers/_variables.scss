@@ -3,15 +3,24 @@
             ***COLOR PALETTE***
 */
 
-/* Base colors */
+// Base colors 
 $color-black: #000;
+$color-custom-blue: #84f2fe;
+$color-custom-blue-light: #adf5fd;
+$color-custom-violet: #bfe4ff;
+$color-custom-violet-light: #c5cffc;
+$color-custom-violet-dark: #c5bafb;
+
 $color-custom-grey: #f5f5f5;
 $color-custom-red: #e96547;
 $color-custom-red-transparent: rgba(233,101,71,0.5);
 $color-custom-yellow: #efbe41;
 $color-white: #fff;
 
-/* Functional colors */
+// Functional colors 
+$color-jumbotron: $color-custom-blue-light;
+$color-text-invert: $color-white;
+
 $color-bg-footer: $color-custom-red;
 $color-bg-main: $color-white;
 $color-bg-strong: $color-custom-yellow;
@@ -28,19 +37,16 @@ $color-shadow: $color-custom-grey;
 $color-tags: $color-white;
 $color-text: $color-black;
 
-/* Gradents */
+// Gradents 
+$gradient-main: linear-gradient(190deg, $color-custom-violet 20%, $color-custom-blue 35%, $color-custom-blue-light 90%);
+
 $gradient-footer: linear-gradient(100deg, $color-custom-red 40%, $color-custom-yellow 89%);
 
 /*
             ***FONTS***
 */
 
-$font-primary: 'Raleway', Verdana, Helvetica, sans-serif;
+$font-primary: 'Bevan', cursive;
 
-/*
-            ***MEDIA QUERIES***
-*/
-
-$tablet: 768px;
-$very-large-screen: 2560px;
-$very-small-screen: 280px;
+// ***MEDIA QUERIES***
+$breakpoint-lg: 992px;

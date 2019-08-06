@@ -1,37 +1,7 @@
 
-/*
-            ***VISUAL***
-*/
+// ***VISUAL***
 
 //index.html
-body,
-header,
-#mainNav { background-color: $color-bg-main; }
-
-#mainNav { @media screen and (max-width: $tablet) { border-top: 2px solid $color-border-main; } }
-
-.portrait { border-radius: 30%; }
-
-strong { background-color: $color-bg-strong; }
-
-i[class^="fab"] { color: $color-icons; }
-
-.card {
-  border: 3px solid $color-shadow;
-  box-shadow: 0px 5px 17px 4px $color-shadow;
-
-  img {
-    border: 2px solid $color-icons;
-    border-radius: 10px;
-  }
-}
-
-.tags li { 
-  background-color: $color-bg-tags;
-  //color: $color-tags; 
-}
-
-footer { background: $gradient-footer; }
 
 
 //404.html
