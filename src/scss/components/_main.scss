@@ -1,7 +1,120 @@
 // ***MAIN***
 
+.content-wrapper {
+  margin-top: -50px;
+
+  @media screen and (min-width: $tablet) { 
+    margin-top: 90px;
+  }
+
+  > section {
+    padding: 0;
+  }
+
+  section:first-child img {
+    transform: rotate(25deg);
+
+    @media screen and (min-width: $mobile-large) { height: 100%; }
+  }
+
+  section:first-child .card {
+    border-bottom: $border-card;
+    border-left: none;
+    border-radius: 0;
+    border-right: none;
+    border-top: $border-card;
+    box-shadow: -3px 3px 9px 1px $color-border;
+
+    &::before,
+    &::after {
+      background-color: $color-deco;
+      content: '';
+    }
+
+    &::before {
+      @include make-overlay(absolute, 30%, 6px, -5px, 0);
+      border-top-right-radius: 90%;
+    }
+
+    &::after {
+      @include make-overlay(absolute, 30%, 6px, 99%, 70%);
+      border-bottom-left-radius: 60%;
+    }
+  }
+
+  section:nth-child(2) .card {
+    border: none;
+    margin: auto;
+
+    .card-header,
+    li {
+      background-color: transparent;
+      border: none;
+    }
+
+    .card-header {
+      font-family: $font-primary;
+      text-align: center;
+    }
+
+    ul {
+      align-items: flex-end;
+    }
+
+    li a {
+      border-bottom: $border-link;
+      padding-bottom: 0;
+    }
+
+  }
+
+  section:last-child {
+    background-color: $color-section;
+    margin-top: 30px;
+    padding: 50px 0;
+  }
+}
+
+.card {
+  max-width: 80ch;
+}
+
 .tips { 
   display: flex; 
   flex-direction: column;
-  @media screen and (min-width: 768px) { flex-direction: row; }
+
+  @media screen and (min-width: $tablet) { 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  > .card {
+    box-shadow: 3px 3px 6px $color-border;
+    display: grid;
+    grid: 250px 1fr / 1fr;
+    flex: 0 1 45ch;
+    margin: 20px;
+
+    img {
+      height: 250px;
+      min-height: 250px;
+      object-fit: none;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .card-body {
+      align-content: start;
+      display: grid;
+
+      h3 {
+        @media screen and (min-width: $tablet) {
+          font-size: 1.5rem;
+          height: 80px;
+        }
+      }
+    }
+  }
+  
 }

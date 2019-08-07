@@ -15,14 +15,14 @@ header {
 
 .carousel {
   height: 35vh;
-  opacity: .7;
+  opacity: .5;
   overflow: hidden;
   
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet-large) {
     height: 40vh;
   }
 
-  @media screen and (min-width: $tablet-large){
+  @media screen and (min-width: $desktop){
     @include make-overlay(absolute, 100%, 100%, 0, 0)
   }
 }
@@ -35,7 +35,7 @@ header {
   height: 40vh;
   justify-content: center;
 
-  @media screen and (min-width: $tablet-large){
+  @media screen and (min-width: $desktop){
     @include make-overlay(absolute, 80%, 40%, 70%, 20%)
   }
 }

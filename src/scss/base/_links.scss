@@ -6,7 +6,7 @@ a {
   color: $color-text;
 }
 
-.navbar-brand {
+.navbar a {
   cursor: pointer;
 
   @media screen and (max-width: $tablet-large){
@@ -25,6 +25,33 @@ a {
 
   &:active {
     font-size: larger;
+  }
+}
+
+.card a {
+  &:focus,
+  &:hover {
+    background-color: $color-border;
+    color: $color-text-invert;
+    padding-left: 20px;
+    padding-right: 10px;
+
+    &::after {
+      content: '⤤';
+      padding: 5px;
+    }
+  }
+
+  &:active {
+    color: inherit;
+  }
+}
+
+.author {
+  text-decoration: underline;
+
+  &:active {
+    opacity: .7;
   }
 }
 
