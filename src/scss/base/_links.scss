@@ -58,6 +58,7 @@ a {
 //404.html
 .not-found--link { 
   color: $color-not-found--link;
+  text-decoration: underline;
   
   &:hover,
   &:focus { color: $color-text; } 

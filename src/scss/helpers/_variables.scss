@@ -10,47 +10,25 @@ $color-custom-blue-light: #adf5fd;
 $color-custom-violet: #bfe4ff;
 $color-custom-violet-light: #c5cffc;
 $color-custom-violet-dark: #c5bafb;
-
-$color-custom-grey: #f5f5f5;
-$color-custom-red: #e96547;
-$color-custom-red-transparent: rgba(233,101,71,0.5);
-$color-custom-yellow: #efbe41;
 $color-white: #fff;
 
 // Functional colors 
 $color-header: $color-custom-blue-light;
 $color-deco: $color-white;
 $color-jumbotron: $color-custom-blue-light;
+$color-text: $color-black;
 $color-text-invert: $color-white;
 $color-section: $color-custom-violet-light;
 $color-border: $color-custom-violet-light;
-
-$color-bg-footer: $color-custom-red;
-$color-bg-main: $color-white;
-$color-bg-strong: $color-custom-yellow;
-$color-bg-tags: $color-custom-red-transparent;
-$color-border-main: $color-custom-grey;
-$color-icons: $color-custom-red;
-$color-line-through: $color-custom-red;
-$color-link: $color-custom-yellow;
-$color-link-active: $color-custom-red;
-$color-navigation: $color-custom-red;
-$color-not-found--heading-bg: $color-custom-yellow;
-$color-not-found--link: $color-custom-yellow;
-$color-shadow: $color-custom-grey;
-$color-tags: $color-white;
-$color-text: $color-black;
+$color-not-found--heading-bg: $color-custom-violet;
+$color-not-found--link: $color-black;
 
 // Gradents 
 $gradient-main: linear-gradient(30deg, $color-white 8%, $color-custom-violet 18%, $color-custom-blue 20%, $color-custom-blue-light 25%);
 $gradient-main-revert: linear-gradient(210deg, $color-white 8%, $color-custom-violet 18%, $color-custom-blue 20%, $color-custom-blue-light 25%);
 
-$gradient-footer: linear-gradient(100deg, $color-custom-red 40%, $color-custom-yellow 89%);
-
-/*
-            ***FONTS***
-*/
-
+// ***FONTS***
+@import url('https://fonts.googleapis.com/css?family=Bevan&display=swap');
 $font-primary: 'Bevan', cursive;
 
 // ***MEDIA QUERIES***
@@ -58,6 +36,7 @@ $mobile-large: 576px;
 $tablet: 768px;
 $tablet-large: 992px;
 $desktop: 1200px;
+$desktop-large: 2560px;
 
 // ***OTHER***
 $border-card: 7px solid $color-border;

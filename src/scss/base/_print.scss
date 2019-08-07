@@ -3,57 +3,65 @@
 @media print {
 
   //hide unnecessary elements
-  #mainNav,
-  .portrait,
-  .low-voice,
-  .card figure,
-  i[class^="fab"] { display: none; }
+  nav,
+  .carousel,
+  img,
+  footer.row,
+  .content-wrapper section:first-child .card::before,
+  .content-wrapper section:first-child .card::after { display: none; }
 
   //linerize the layout
   header,
-  main,
-  #contact,
-  footer { 
+  section,
+  .presentation,
+  .jumbotron,
+  .container,
+  .card,
+  .content-wrapper section:nth-child(2),
+  .row { 
     display: block; 
     width: auto;
     height: auto;
-    margin: 1%;
-    padding: 2%;
+    margin: auto;
+    padding: 10px;
+    position: static;
+    min-width: 0!important;
   }
 
-  header,
-  footer { position: static; }
+  .content-wrapper {
+    margin-top: 15px;
+  }
 
-  main {
-    section {
-      min-height: auto;
-      padding: 0;
-    }
+  .card {
+    width: 75ch;
+  }
 
-    .card {
-      width: auto;
-      height: auto;
-    }
+  .tips {
+  align-items: center;
   }
 
   // adjust the typography
-  body {
+  header,
+  .intro,
+  .jumbotron,
+  .content-wrapper section:last-child,
+  .content-wrapper section,
+  .content-wrapper section:nth-child(2).card li a{
+    background-color: initial;
+    border-bottom: 0;
+    color: initial;
     font-family: serif;
     font-size: 12pt;
   }
 
+  .content-wrapper .card,
+  .content-wrapper section:first-child .card {
+    border-color: initial;
+  }
+
   h1 { text-align: center; }
 
-  // add suplementary content
-  section[id*="about"]::after { 
-    content: "My projects";
-    font-size: 26pt;
-    font-weight: bold; 
-  }
-  
-  a[href*="linkedin"]::before { content: "My LinkedIn: "; }
-  a[href*="github"]::before { content: "My GitHub: "; }
-  a[href*="twitter"]::before { content: "My Twitter: "; }
-  a[href*="codepen"]::before { content: "My CodePen: "; }
+  // add suplementary content  
+  a[href*="http"]::after { content: " (" attr(href) ")"; }
 
 }
