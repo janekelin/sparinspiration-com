@@ -8,13 +8,16 @@ header {
 }
 
 .presentation {
-  height: 75vh;
   padding: 0;
   position: relative;
+
+  @media screen and (min-width: $desktop){
+    height: 75vh;
+  }
 }
 
 .carousel {
-  height: 35vh;
+  height: 30vh;
   opacity: .5;
   overflow: hidden;
   
@@ -32,8 +35,9 @@ header {
   background-color: darken($color-jumbotron, 60%);
   color: $color-text-invert;
   display: flex;
-  height: 40vh;
+  height: 30vh;
   justify-content: center;
+  margin-bottom: 0;
 
   @media screen and (min-width: $desktop){
     @include make-overlay(absolute, 80%, 40%, 70%, 20%)
